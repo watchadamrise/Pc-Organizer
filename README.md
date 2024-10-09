@@ -1,4 +1,4 @@
-# These instructions are written very detiled for people like me that are just starting out and don't know all the jargan and lingo used. I struggled a lot in the beginning with things that would be written as if it were common sense. But I was not privvy to such knowledge until i started this journey. It would fill me with such self doubt and frustration. I'd like to help anyone avoid that if possible. 
+# These instructions are written very detailed for people like me that are just starting out and don't know all the jargan and lingo used. I struggled a lot in the beginning with things that would be written as if it were common sense. But I was not privvy to such knowledge until i started this journey. It would fill me with such self doubt and frustration. I'd like to help anyone avoid that if possible. 
 
 # Windows only 
 #### I Don't know linux or other OS's well enough to put my name on anything there yet.
