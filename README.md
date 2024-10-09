@@ -1,3 +1,5 @@
+# These instructions are written very detiled for people like me that are just starting out and don't know all the jargan and lingo used. I struggled a lot in the beginning with things that would be written as if it were common sense. But I was not privvy to such knowledge until i started this journey. It would fill me with such self doubt and frustration. I'd like to help anyone avoid that if possible. 
+
 # Windows only 
 #### I Don't know linux or other OS's well enough to put my name on anything there yet.
 # Pc-Organizer
@@ -42,6 +44,8 @@ Always double-check the folder you are targeting to make sure it does not contai
    - Double-click on this file to open the installer.
    - **Important:** On the first screen, check the box that says "Add Python to PATH".
    - Then click "Install Now" and follow the instructions on the screen. This will take a few minutes.
+   - 
+****you should know what folder you're moving to or should create one now.****
 
 ### Step 2: Save the Script
 
@@ -90,7 +94,14 @@ Always double-check the folder you are targeting to make sure it does not contai
 ###Step 3: Modify the Script
 -To change which files get moved or where they go, follow these steps:
 
-**Open the Script:**
+**if you still have notepad open with the script you just pasted, great. Lets edit that now. 
+Look for the lines in the script that say source_folder and destination_folder.
+-Line 6 change 'E:\\Sorted Files' to the folder or drive where your files currently are. For example, 'E:\\Users\\YourName\\Videos' for full drive 'E:\\. keep the '''', paste between them. 
+-Line 7 change 'E:\\Moved Files' to the folder where you want the files to go. For example, 'E:\\Videos'.
+-Line 16 change the File Extensions: this is the 3 letters that follow the file name. pic.jpg, jpg is the extension.
+-Save the edited script on the location you wish to pull from. this is critical when moving from drive to drive. 
+
+**If you closed notepad, Open the Script:**
 
 -Find the Pc-Organizer.py file you saved (for example, in your "Documents" folder) and right-click it.
 -Select "Open with" and choose "Notepad".
@@ -106,12 +117,7 @@ Always double-check the folder you are targeting to make sure it does not contai
 -Click "File" in the top left corner of Notepad, then click "Save As".
 -In the "Save as type" dropdown, select "All Files".
 -In the "File name" field, type Pc-Organizer.py.
--Choose a location where you want to save the file (like "Documents").
-
-**If you're not sure where to save it:**
--Click on "This PC" on the left side of the Save As window.
--Double-click on "Documents".
--Once you've selected the location, click "Save".
+-Choose a location where you want to save the file (like "Documents"). Must be on the drive you are moving from. 
 
 
 ###Step 4: Run the Script
@@ -121,6 +127,8 @@ Now it's time to make the script do its job. Here’s how:
 
 Right-click the "Start" button (the Windows logo in the bottom left corner) and choose "Windows PowerShell" or "Command Prompt".
 Note: PowerShell and Command Prompt are similar. Either one works for this step.
+can also push the windows key then while holding it down. press the 'x' key and it'll pull up a list of programs. choose powershell or terminal. 
+
 Navigate to the Script Location:
 
 If you saved your script in "Documents", type the following command and press "Enter":
@@ -132,6 +140,11 @@ cd Documents
 First, type cd followed by a space.
 Then, drag and drop the folder where you saved the script into the PowerShell or Command Prompt window. This will automatically fill in the path.
 Press "Enter".
+or type out the full path
+
+cd E:\\Users 
+press enter
+
 Run the Script:
 
 To run the script, type the following command and press "Enter":
@@ -170,3 +183,5 @@ for root, dirs, files in os.walk(source_folder):
                 print(f'Error moving file {source_file}: {e}')
 
 print('All specified files have been moved!')
+
+
